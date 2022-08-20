@@ -7,6 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perfil de Pudones</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+    :root {
+      --fonte-normal: 'Roboto', sans-serif;
+      --fonte-destaque: 'Righteous', cursive;
+    }
+
     * {
       margin: 0;
       padding: 0;
@@ -16,13 +23,38 @@
       background: #222;
       color: white;
       font-size: 1.5em;
+      font-family: var(--fonte-normal);
+    }
+
+    header {
+      background-color: black;
+      text-align: center;
+      font-family: var(--fonte-destaque);
+      padding: 30px;
+    }
+
+    section {
+      background-color: #111;
+      text-align: left;
+      width: 1100px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Perfil de Pudones</h1>
+    <h1>pudones.github.io</h1>
 
   </header>
 
@@ -30,9 +62,11 @@
     <section>
       <p>Alguns projetos já executados:</p>
       <br>
-      <a href="https://pudones.github.io/site-android/" target="_blank">Projeto Android</a> <br>
-      <a href="https://pudones.github.io/siteFodaZap2/" target="_blank">WhatsApp 2</a> <br>
-      <a href="https://pudones.github.io/projeto-cordel/d012.html" target="_blank">Projeto Cordel</a>
+      <ul>
+        <li><a href="https://pudones.github.io/site-android/" target="_blank">Projeto Android</a>
+        <li><a href="https://pudones.github.io/siteFodaZap2/" target="_blank">WhatsApp 2</a>
+        <li><a href="https://pudones.github.io/projeto-cordel/d012.html" target="_blank">Projeto Cordel</a>
+      </ul>
     </section>
   </main>
 
