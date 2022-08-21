@@ -33,15 +33,20 @@
       text-decoration: none;
     }
 
+    .perfil__info-texto{
+      padding-left: 50px;
+    }
+
     .perfil__info p {
       text-align: justify;
       padding-bottom: 15px;
     }
 
-    #perfil__img {
+    #perfil__img img {
       width: 250px;
       height: 250px;
       border-radius: 50%;
+      border: 1px solid white;
     }
 
     section {
