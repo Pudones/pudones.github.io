@@ -1,71 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 
-    :root {
-      --fonte-normal: 'Roboto', sans-serif;
-      --fonte-destaque: 'Righteous', cursive;
-    }
+:root {
+  --fonte-normal: 'Roboto', sans-serif;
+  --fonte-destaque: 'Righteous', cursive;
+}
 
-    * {
-      margin: 0;
-      padding: 0;
-    }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-    body {
-      background: #222;
-      color: white;
-      font-size: 1.5em;
-      font-family: var(--fonte-normal);
-    }
+body {
+  background-color: #222;
+}
 
-    header {
-      background-color: black;
-      text-align: center;
-      font-family: var(--fonte-destaque);
-      padding: 30px;
-    }
+header {
+  font-family: var(--fonte-destaque);
+  font-size: 1.7em;
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+}
 
-    header a {
-      color: rgb(46, 46, 208);
-      text-decoration: none;
-    }
+header a {
+  text-decoration: none;
+  color: rgb(25, 25, 196);
+}
 
-    header a:hover {
-      text-decoration: none;
-    }
+main {
+  background-color: #333;
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.342);
+}
 
-    .perfil__info-texto{
-      padding-left: 50px;
-    }
+.text {
+  color: white;
+  font-family: var(--fonte-normal);
+}
 
-    .perfil__info p {
-      text-align: justify;
-      padding-bottom: 15px;
-    }
+.div__perfil {
+  display: flex;
+  align-items: center;
+}
 
-    #perfil__img img {
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 1px solid white;
-    }
+.div__perfil img {
+  border-radius: 50%;
+  border: 1px solid navy;
+}
 
-    section {
-      background-color: #111;
-      text-align: left;
-      max-width: 1100px;
-      margin: auto;
-      padding: 50px;
-    }
+.div__perfil-info {
+  margin-left: 50px;
+}
 
-    .section__conteudo li {
-      list-style: square;
-    }
+.div__perfil-info p {
+  font-size: 1.5em;
+  text-align: justify;
+}
 
-    a {
-      text-decoration: none;
-      color: white;
-    }
+.div__perfil-info h1 {
+  font-size: 2.5em;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+.div__content {
+  padding: 20px 30px;
+}
+
+.div__content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.div__content a {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+.div__content a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.div__content li {
+  list-style: square;
+}
