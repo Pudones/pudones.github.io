@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pudones - Hub de Projetos</title>
-  <link rel="stylesheet" href="./estilos/style.css">
-  <link rel="shortcut icon" href="./attachments/images/favicon.ico" type="image/x-icon">
+  <title>Pudones - HUB</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="./js/down-arrow.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <h1>
-      <a href="https://pudones.github.io">pudones.github.io</a>
-    </h1>
+  <header class="header-core">
+    <div class="header-container">
+      <h1 class="header-title">
+        <a class="header-title-link" href="https://pudones.github.io/">pudones.github.io</a>
+      </h1>
+    </div>
   </header>
 
   <main>
-    <div class="div__perfil">
-      <img src="./attachments/images/perfil.jpeg" alt="Foto de perfil">
-      <div class="div__perfil-info text">
-        <h1>Quem sou?</h1>
-        <p>Me chamo Guilherme e aqui será um hub para projetos que estarei executando e mantendo de forma pública. <br> Obrigado pela visita!
-        </p>
+
+    <section class="section-intro section-full-viewport section-padding">
+      <div class="section-container">
+        <h2>Hub para showcase <br> dos meus projetos.</h2>
+        <a href="#projetos">
+          <svg id="down-arrow" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+            width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <polygon points="396.6,160 416,180.7 256,352 96,180.7 115.3,160 256,310.5 " />
+          </svg>
+        </a>
       </div>
-    </div>
-    <div class="div__content text">
-      <h2>Projetos</h2>
-      <ul>
-        <li><a href="https://pudones.github.io/site-android/" target="_blank">Projeto Android</a>
-        <li><a href="https://pudones.github.io/projeto-cordel/d012.html" target="_blank">Projeto Cordel</a>
-        <li><a href="https://pudones.github.io/siteFodaZap2/" target="_blank">WhatsApp 2</a>
-      </ul>
-    </div>
+    </section>
+
+    <section id="projetos" class="section-full-viewport section-padding">
+      <div class="section-container">
+
+        <div class="section-projects-wrapper">
+
+          <img class="section-projects-thumb" src="./attachments/images/cordel-moderno-thumb.png" alt="Print mostrando o site do projeto Cordel Moderno">
+          
+          <div class="section-projects-text-wrapper">
+            <h3 class="section-projects-title">
+              <a class="section-projects-link" href="https://pudones.github.io/projeto-cordel/d012.html">Projeto Cordel Moderno</a>
+            </h3>
+            <p class="section-projects-p-text">Site feito com o intuito de ser uma espécie de cordel virtual.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
-
-  <footer>
-
-  </footer>
 
 </body>
 
