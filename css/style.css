@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: #eee;
   font-family: Poppins, Arial, sans-serif;
+  text-decoration: none;
 }
 
 @font-face {
@@ -42,18 +43,19 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 
 body {
   background-color: var(--cor0);
+  font-size: 1.6rem;
 }
 
 header {
-  height: 12vh;
   position: fixed;
   width: 100%;
-  /* background para teste */
-  /* background: var(--cor3); */
+  padding: 1.4rem;
+  z-index: 2;
 }
 
 /* Estilos gerais */
@@ -85,25 +87,35 @@ header {
   pointer-events: none;
 }
 
+.space-after-text {
+  margin-bottom: 30px;
+}
+
 /* Estilos específicos */
+
+.header--shrink {
+  background-color: #121212;
+  padding: 0.5rem;
+}
+
+.header-title--shrink {
+  font-size: 3.2rem !important;
+}
 
 .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  max-width: 1024px;
-  width: 100%;
   margin: 0 auto;
-  padding: 5px;
-  /* background para teste */
-  /* background: blue; */
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 14px;
 }
 
 .header-title-link {
-  transition: .3s all ease-in;
+  transition: all .3s ease;
   font-family: Monoton;
-  font-size: 3.5rem;
+  font-size: 5rem;
   text-decoration: none;
   font-variant: small-caps;
 }
@@ -120,9 +132,9 @@ header {
   background-blend-mode: darken;
 }
 
-.section-intro .section-container h2 {
+.section-intro-title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4.8rem;
   font-weight: 300;
   letter-spacing: 2px;
 }
@@ -145,8 +157,24 @@ header {
   margin-bottom: 40px;
 }
 
+.section-projects-image-wrapper {
+  width: 50%;
+}
+
+.section-projects-image-wrapper--alternate {
+  display: flex;
+  order: 1;
+}
+
+.section-projects-text-wrapper {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
 .section-projects-thumb {
   display: flex;
+  margin: 0 auto;
   width: 100%;
   max-width: 500px;
   border: 1px solid white;
@@ -158,13 +186,19 @@ header {
   padding: 10px;
 }
 
+.section-projects-button {
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+}
+
 .section-projects-title {
   font-variant: small-caps;
-  font-size: 2rem;
+  font-size: 3.2rem;
 }
 
 .section-projects-p-text {
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -172,17 +206,37 @@ header {
   text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+
+  .section-intro-title {
+    font-size: 4.2rem;
+  }
+}
+
+
 @media (max-width: 768px) {
   .header-title-link {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
-  .section-intro .section-container h2 {
-    font-size: 2rem;
+  .section-intro-title {
+    font-size: 3.2rem;
   }
 
   .section-projects-wrapper {
     flex-direction: column;
+  }
+
+  .section-projects-image-wrapper {
+    width: 100%;
+  }
+
+  .section-projects-image-wrapper--alternate {
+    order: 0;
+  }
+
+  .section-projects-text-wrapper {
+    width: 100%;
   }
 
   .section-projects-thumb {
