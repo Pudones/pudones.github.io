@@ -224,7 +224,6 @@ header {
   gap: 20px;
   max-width: 400px;
   margin: 0 auto;
-  /* background: blue; */
 }
 
 .footer-icons-container::before, .footer-icons-container::after {
