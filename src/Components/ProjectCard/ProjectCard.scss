@@ -1,0 +1,94 @@
+@use '../../sassStyles/' as u;
+
+.project-card {
+  @include u.flexCenter--column;
+  padding: 24px;
+  gap: 20px;
+
+  @include u.forDesktop {
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+
+  .project-thumbnail {
+    display: block;
+    width: 300px;
+    height: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    @include u.forTablet {
+      width: 450px;
+      height: 225px;
+    }
+  }
+
+  .project-thumbnail--inverted {
+    @include u.forDesktop {
+      order: 1;
+    }
+  }
+
+  .project-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+
+    .project-title {
+      font-size: 1.75rem;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .project-desc {
+      font-size: u.$fs;
+      letter-spacing: .75px;
+      line-height: 1.4;
+      max-width: 450px;
+      text-align: left;
+    }
+
+    .project-links-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+
+      @include u.forDesktop {
+        flex-direction: row;
+        gap: 0;
+      }
+
+
+      .project-link,
+      .project-repository {
+        color: #f2f3f4;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 12px 24px;
+        transition: .1s;
+        min-width: calc(16ch + 48px);
+        text-align: center;
+        font-weight: 500;
+        font-size: u.$fs;
+
+
+        &:hover {
+          background-color: rgb(62, 5, 62);
+          transform: scale(1.10);
+        }
+
+        @include u.forDesktop {
+          width: 100%;
+
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+
+
+  }
+}

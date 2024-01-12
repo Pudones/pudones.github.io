@@ -1,0 +1,64 @@
+@use '../../sassStyles/' as u;
+
+.section-contact {
+  padding-block: 50px;
+
+  &-container {
+    max-width: 1024px;
+    padding: 24px;
+    margin: 0 auto;
+
+    .section-contact-title {
+      font-size: u.$fl;
+      text-align: center;
+      margin-bottom: 50px;
+
+      @include u.forDesktop {
+        margin-bottom: 100px;
+      }
+    }
+
+    .section-contact-social-icons-wrapper {
+      @include u.flexCenter--column;
+      gap: 60px;
+
+      @include u.forDesktop {
+        flex-direction: row;
+        margin-bottom: 100px;
+        gap: 150px;
+      }
+
+      a {
+        @include u.flexCenter;
+        font-size: u.$fm;
+        background: #e1d1d9;
+        padding: 24px;
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        transition: .3s;
+        border: 1px solid transparent;
+
+        @include u.forDesktop {
+          width: 200px;
+          height: 200px;
+        }
+
+        &:hover {
+          transform: scale(1.15);
+          border: 1px solid purple;
+        }
+
+        img {
+          width: 75px;
+          height: 75px;
+
+          @include u.forDesktop {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+  }
+}

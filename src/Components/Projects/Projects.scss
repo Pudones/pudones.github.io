@@ -1,0 +1,14 @@
+@use '../../sassStyles/' as u;
+
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-block: 50px;
+
+  .section-projects-title {
+    font-size: u.$fxl;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
